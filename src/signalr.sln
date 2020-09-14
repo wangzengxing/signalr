@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalRDemo", "SignalRDemo\SignalRDemo.csproj", "{EE7A5FE5-54E0-4E6D-9202-499082365838}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F8695A40-E2DC-4309-B4B0-EEC012932973}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SignalR.Demo", "SignalR.Demo\SignalR.Demo.csproj", "{09C84F3C-91C7-44EE-B4A3-39D0D0671148}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,16 +13,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EE7A5FE5-54E0-4E6D-9202-499082365838}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EE7A5FE5-54E0-4E6D-9202-499082365838}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EE7A5FE5-54E0-4E6D-9202-499082365838}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EE7A5FE5-54E0-4E6D-9202-499082365838}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C84F3C-91C7-44EE-B4A3-39D0D0671148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C84F3C-91C7-44EE-B4A3-39D0D0671148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C84F3C-91C7-44EE-B4A3-39D0D0671148}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C84F3C-91C7-44EE-B4A3-39D0D0671148}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{EE7A5FE5-54E0-4E6D-9202-499082365838} = {F8695A40-E2DC-4309-B4B0-EEC012932973}
+		{09C84F3C-91C7-44EE-B4A3-39D0D0671148} = {F8695A40-E2DC-4309-B4B0-EEC012932973}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9130F32-BE90-44F4-9964-A3B6F25E2AD1}

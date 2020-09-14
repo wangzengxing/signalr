@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace SignalRDemo.Hubs
+namespace SignalR.Demo.Hubs
 {
     public class HelloHub : Hub
     {

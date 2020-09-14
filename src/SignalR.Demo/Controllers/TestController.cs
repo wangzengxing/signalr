@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SignalR;
-using SignalRDemo.Hubs;
+using SignalR.Demo.Hubs;
 
-namespace SignalRDemo.Controllers
+namespace SignalR.Demo.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

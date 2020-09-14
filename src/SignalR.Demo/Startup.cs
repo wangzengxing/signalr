@@ -9,10 +9,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using SignalRDemo.Hubs;
-using SignalRDemo.Service;
+using SignalR.Demo.Hubs;
+using SignalR.Demo.Service;
 
-namespace SignalRDemo
+namespace SignalR.Demo
 {
     public class Startup
     {

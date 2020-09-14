@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "SignalRDemo": {
+    "SignalR.Demo": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
