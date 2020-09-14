@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using SignalR.Demo.Hubs;
 using SignalR.Demo.Service;
+using SignalR.Demo.Services;
 
 namespace SignalR.Demo
 {
@@ -23,6 +24,8 @@ namespace SignalR.Demo
             services.AddSignalR();
 
             services.AddSingleton<IUserIdProvider, CustomerUserIdProvider>();
+
+            services.AddControllers();
 
             services.AddAuthentication(options =>
             {
@@ -39,7 +42,7 @@ namespace SignalR.Demo
                         var accessToken = context.Request.Query["access_token"];
                         var path = context.HttpContext.Request.Path;
                         if (!string.IsNullOrEmpty(accessToken) &&
-                            (path.StartsWithSegments("/hubs/chat")))
+                            (path.StartsWithSegments(HelloHubConfig.Path)))
                         {
                             context.Token = accessToken;
                         }
@@ -65,7 +68,8 @@ namespace SignalR.Demo
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapHub<HelloHub>("/chatHub");
+                endpoints.MapControllers();
+                endpoints.MapHub<HelloHub>(HelloHubConfig.Path);
             });
         }
     }
